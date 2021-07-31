@@ -3,7 +3,7 @@ const CatchAllPage = () => {
 }
 export const getServerSideProps = (context) => {
     console.log(context)
-    return { props: {}}
+    return { props: {} }
 }
 
 export default CatchAllPage
