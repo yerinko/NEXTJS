@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Button from "../src/components/Button";
 import Link from "next/link";
+import Imgae from "next/Image";
 
 export default function Home() {
   return (
@@ -23,6 +24,13 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
         <Button/>
+        <Imgae
+            src="/me.png"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+            // priority={true}
+        />
       </main>
 
       <footer className={styles.footer}>
