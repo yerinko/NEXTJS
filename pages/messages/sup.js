@@ -13,7 +13,8 @@ const Sup = ({errorCode, message}) => {
 
 export const getServerSideProps = (context) => {
     try {
-        throw new Error('broken')
+        return { props: { message: 'suppppppppppp'},
+        }
     } catch(error) {
         return { props: {errorCode: 401, message:'broken'}}
     }

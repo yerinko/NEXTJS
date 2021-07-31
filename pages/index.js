@@ -6,6 +6,7 @@ import Link from "next/link";
 import Imgae from "next/Image";
 
 export default function Home() {
+    console.log(process.env.NEXT_PUBLIC_DEVMESSAGE)
   return (
     <div className={styles.container}>
       <Head>

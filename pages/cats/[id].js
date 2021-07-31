@@ -15,6 +15,7 @@ const CatPage = () => {
     return
 }
 export const getStaticPaths = () => {
+    console.log('env message', process.env.MESSAGE)
     return {
         paths: [
             { params: {id: '1' }},
