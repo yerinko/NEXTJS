@@ -1,9 +1,9 @@
 import Error from "next/error";
 
 const Sup = ({errorCode, message}) => {
-    if(errorCode) {
-        <Error statusCode={errorCode} title={message}/>
-    }
+    // if(errorCode) {
+    //     <Error statusCode={errorCode} title={message}/>
+    // }
     return (
         <div>
             <h1>{message}</h1>
@@ -11,7 +11,7 @@ const Sup = ({errorCode, message}) => {
     );
 };
 
-export const getServerSideProps = (context) => {
+export const getInitialProps = (context) => {
     try {
         return { props: { message: 'suppppppppppp'},
         }

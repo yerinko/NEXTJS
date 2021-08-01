@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Button from "../src/components/Button";
 import Link from "next/link";
-import Imgae from "next/Image";
 
 export default function Home() {
     console.log(process.env.NEXT_PUBLIC_DEVMESSAGE)
@@ -25,13 +23,6 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
         <Button/>
-        <Imgae
-            src="/me.png"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-            // priority={true}
-        />
       </main>
 
       <footer className={styles.footer}>
@@ -41,9 +32,6 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
         </a>
       </footer>
     </div>
